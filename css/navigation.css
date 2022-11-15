@@ -1,0 +1,16 @@
+.main-navigation {
+    margin: 15px;
+}
+
+.navigation-list-item, .wishlist-list-item {
+    margin: 15px 10px 15px 0;
+    padding: 7px 7px 3px;
+    background-color: white;
+    border-radius: 7pt;
+    display: table;
+}
+
+.navigation-list-item-text, .wishlist-list-item-text {
+    color: black;
+    font: 20px/22px main-font;
+}
