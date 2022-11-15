@@ -7,28 +7,24 @@
     padding: 7px 7px 3px;
     margin-bottom: 10px;
     font-size: 24px;
-    background-color: white;
-    border-radius: 7pt;
     display: inline-block;
     text-decoration: underline;
+    font-weight: bolder
 }
 
 .about-us-sad-story {
     font-style: italic;
     font-size: 12px;
-    background-color: white;
-    border-radius: 7pt;
     margin-bottom: 10px;
     padding: 7px 7px 3px;
-    display: inline-block;
-    text-align: right;
+    text-align: left;
+    font-weight: bolder;
 }
 
 .about-us-main-description {
     line-height: 150%;
-    background-color: white;
-    border-radius: 7pt;
     padding: 7px 7px 3px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: justify;
+    font-weight: bolder
 }
