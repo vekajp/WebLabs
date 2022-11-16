@@ -23,3 +23,12 @@ body {
 a:hover {
     color: var(--logo-dark-purple);
 }
+
+main {
+    padding-bottom: 30px;
+}
+
+.body-container {
+    position: relative;
+    min-height: 100vh;
+}
