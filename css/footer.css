@@ -1,3 +1,10 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .footer_text{
     font: 12px main-font;
     margin: 15px;
