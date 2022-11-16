@@ -27,7 +27,7 @@
 }
 
 
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 850px) {
     .header_logo-background-mobile {
         background:
                 linear-gradient(

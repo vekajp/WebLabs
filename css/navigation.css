@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-device-width: 850px) {
+@media screen and (max-width: 850px) {
     .navigation {
         margin: 10px;
     }
@@ -36,6 +36,10 @@
     }
     .navigation_list-item_text {
         text-align: center;
+    }
+
+    .navigation_list-item_text {
+        font: 12px main-font;
     }
 }
 
