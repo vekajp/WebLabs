@@ -5,14 +5,11 @@
     --logo-blue:#A9DEF9;
     --logo-purple:#E4C1F9;
     --logo-dark-purple:#806491;
+    --page-color:#fefdee
 }
 
 body {
-    background: linear-gradient(
-            to bottom,
-            var(--logo-purple) 50%,
-            white
-    ) fixed;
+    background-color: var(--page-color);
 }
 
 .info {
