@@ -26,15 +26,16 @@
 }
 
 
-@media screen and (max-device-width: 1400px) {
+@media screen and (max-device-width: 400px) {
     header {
         visibility: visible;
     }
     .header_logo-image {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         margin: 15px;
     }
+
     .header_logo-background-mobile {
         background:
                 linear-gradient(

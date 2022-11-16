@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-device-width: 1400px) {
+@media screen and (max-device-width: 400px) {
     .navigation {
         margin: 10px;
     }
@@ -31,7 +31,7 @@
     }
 
     .navigation_list-item {
-        margin: 10px 0 10px 0;
+        margin: 5px 5px 5px 0;
         padding: 7px 7px 3px;
         display: block;
         position: center;
@@ -39,7 +39,7 @@
 
     .navigation_list-item_text {
         color: black;
-        font: 40px main-font;
+        font: 18px main-font;
         text-align: center;
     }
 }

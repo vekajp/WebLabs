@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (max-device-width: 1400px) {
+@media screen and (max-device-width: 400px) {
     .footer {
         position: absolute;
         bottom: 0;
@@ -22,7 +22,7 @@
         justify-content: center;
     }
     .footer_text{
-        font: 24px main-font;
+        font: 12px main-font;
         margin: 15px;
         display: inline-block;
     }
