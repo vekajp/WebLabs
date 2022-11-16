@@ -12,7 +12,7 @@ body {
             to bottom,
             var(--logo-purple) 50%,
             white
-    );
+    ) fixed;
 }
 
 .info {
