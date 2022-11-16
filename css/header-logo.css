@@ -4,21 +4,53 @@
     height: 150px;
     margin: 15px;
 }
-.header_logo-background {
-    background:
-            linear-gradient(
-            to bottom,
-            var(--logo-red) 20%,
-            var(--logo-red) 20%,
-            var(--logo-yellow) 20%,
-            var(--logo-yellow) 40%,
-            var(--logo-green) 20%,
-            var(--logo-green) 60%,
-            var(--logo-blue) 20%,
-            var(--logo-blue) 80%,
-            var(--logo-purple) 20%,
-            var(--logo-purple) 100%
-    );
-    margin-bottom: 10px;
-    display: flex;
+
+@media screen and (max-width: 4000px) and (min-width: 651px) {
+    .header_logo-navigation-background {
+        background:
+                linear-gradient(
+                        to bottom,
+                        var(--logo-red) 20%,
+                        var(--logo-red) 20%,
+                        var(--logo-yellow) 20%,
+                        var(--logo-yellow) 40%,
+                        var(--logo-green) 20%,
+                        var(--logo-green) 60%,
+                        var(--logo-blue) 20%,
+                        var(--logo-blue) 80%,
+                        var(--logo-purple) 20%,
+                        var(--logo-purple) 100%
+                );
+        margin-bottom: 10px;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .header_logo-image {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .header_logo-background {
+        background:
+                linear-gradient(
+                        to bottom,
+                        var(--logo-red) 20%,
+                        var(--logo-red) 20%,
+                        var(--logo-yellow) 20%,
+                        var(--logo-yellow) 40%,
+                        var(--logo-green) 20%,
+                        var(--logo-green) 60%,
+                        var(--logo-blue) 20%,
+                        var(--logo-blue) 80%,
+                        var(--logo-purple) 20%,
+                        var(--logo-purple) 100%
+                );
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: center;
+    }
 }
