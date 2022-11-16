@@ -1,3 +1,9 @@
+@import "reset-style.css";
+@import "header-logo.css";
+@import "general.css";
+@import "footer.css";
+@import "navigation.css";
+
 .about-us {
     margin: 15px;
     font: 14px main-font;
@@ -9,16 +15,15 @@
     font-size: 24px;
     display: inline-block;
     font-weight: bolder;
-    text-shadow: var(--logo-dark-purple) 1px 0 2px;
+    text-shadow: var(--logo-dark-purple) 0 0 1px;
 }
 
 .about-us_sad-story {
     font-size: 12px;
     margin-bottom: 10px;
     padding: 7px 7px 3px;
-    text-align: left;
     font-weight: bolder;
-    text-shadow: var(--logo-dark-purple) 1px 0 2px;
+    text-shadow: var(--logo-dark-purple) 0 0 1px;
 }
 
 .about-us_main-description {
@@ -27,5 +32,5 @@
     margin-bottom: 10px;
     text-align: justify;
     font-weight: bolder;
-    text-shadow: var(--logo-dark-purple) 1px 0 2px;
+    text-shadow: var(--logo-dark-purple) 0 0 1px;
 }
