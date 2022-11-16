@@ -9,21 +9,14 @@
     font: 14px main-font;
     color: black;
 }
-.about-us_header {
-    padding: 7px 7px 3px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    display: inline-block;
-    font-weight: bolder;
-    text-shadow: var(--logo-dark-purple) 0 0 1px;
-}
-
 .about-us_sad-story {
     font-size: 12px;
     margin-bottom: 10px;
     padding: 7px 7px 3px;
     font-weight: bolder;
     text-shadow: var(--logo-dark-purple) 0 0 1px;
+    text-align: center;
+
 }
 
 .about-us_main-description {
@@ -33,4 +26,5 @@
     text-align: justify;
     font-weight: bolder;
     text-shadow: var(--logo-dark-purple) 0 0 1px;
+    position: center;
 }
