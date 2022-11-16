@@ -1,24 +1,57 @@
 @import "fonts.css";
-.header_logo-image {
-    width: 150px;
-    height: 150px;
-    margin: 15px;
+@media screen {
+    .header_logo-image {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+    }
+    .header_logo-background {
+        background:
+                linear-gradient(
+                        to bottom,
+                        var(--logo-red) 20%,
+                        var(--logo-red) 20%,
+                        var(--logo-yellow) 20%,
+                        var(--logo-yellow) 40%,
+                        var(--logo-green) 20%,
+                        var(--logo-green) 60%,
+                        var(--logo-blue) 20%,
+                        var(--logo-blue) 80%,
+                        var(--logo-purple) 20%,
+                        var(--logo-purple) 100%
+                );
+        margin-bottom: 10px;
+        display: flex;
+    }
 }
-.header_logo-background {
-    background:
-            linear-gradient(
-            to bottom,
-            var(--logo-red) 20%,
-            var(--logo-red) 20%,
-            var(--logo-yellow) 20%,
-            var(--logo-yellow) 40%,
-            var(--logo-green) 20%,
-            var(--logo-green) 60%,
-            var(--logo-blue) 20%,
-            var(--logo-blue) 80%,
-            var(--logo-purple) 20%,
-            var(--logo-purple) 100%
-    );
-    margin-bottom: 10px;
-    display: flex;
+
+
+@media handheld {
+    header {
+        visibility: visible;
+    }
+    .header_logo-image {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+    }
+    .header_logo-background-mobile {
+        background:
+                linear-gradient(
+                        to bottom,
+                        var(--logo-red) 20%,
+                        var(--logo-red) 20%,
+                        var(--logo-yellow) 20%,
+                        var(--logo-yellow) 40%,
+                        var(--logo-green) 20%,
+                        var(--logo-green) 60%,
+                        var(--logo-blue) 20%,
+                        var(--logo-blue) 80%,
+                        var(--logo-purple) 20%,
+                        var(--logo-purple) 100%
+                );
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
 }

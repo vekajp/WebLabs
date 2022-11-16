@@ -1,12 +1,29 @@
-.footer {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+@media screen {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer_text{
+        font: 12px main-font;
+        margin: 15px;
+        display: inline-block;
+    }
 }
-.footer_text{
-    font: 12px main-font;
-    margin: 15px;
-    display: inline-block;
+
+@media handheld {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer_text{
+        font: 24px main-font;
+        margin: 15px;
+        display: inline-block;
+    }
 }
