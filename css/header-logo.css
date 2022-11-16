@@ -20,4 +20,5 @@
             var(--logo-purple) 100%
     );
     margin-bottom: 10px;
+    display: flex;
 }
