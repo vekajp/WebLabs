@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-device-width: 1800px) {
+@media screen and (max-device-width: 1400px) {
     .navigation {
         margin: 10px;
     }
