@@ -1,29 +1,12 @@
-@media screen {
-    .footer {
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-    .footer_text{
-        font: 12px main-font;
-        margin: 15px;
-        display: inline-block;
-    }
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
-
-@media screen and (max-device-width: 400px) {
-    .footer {
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-    .footer_text{
-        font: 12px main-font;
-        margin: 15px;
-        display: inline-block;
-    }
+.footer_text{
+    font: 12px main-font;
+    margin: 15px;
+    display: inline-block;
 }
