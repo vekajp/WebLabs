@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 480px) {
     .footer {
         position: absolute;
         bottom: 0;
