@@ -8,13 +8,11 @@
     margin-bottom: 10px;
     font-size: 24px;
     display: inline-block;
-    text-decoration: underline;
     font-weight: bolder;
     text-shadow: var(--logo-dark-purple) 1px 0 2px;
 }
 
 .about-us_sad-story {
-    font-style: italic;
     font-size: 12px;
     margin-bottom: 10px;
     padding: 7px 7px 3px;
