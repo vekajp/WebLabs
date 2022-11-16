@@ -1,11 +1,10 @@
-@import "colors.css";
 @import "fonts.css";
-.logo-image {
+.header_logo-image {
     width: 150px;
     height: 150px;
     margin: 15px;
 }
-.logo-background {
+.header_logo-background {
     background:
             linear-gradient(
             to bottom,

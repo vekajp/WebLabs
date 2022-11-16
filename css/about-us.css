@@ -3,7 +3,7 @@
     font: 14px main-font;
     color: black;
 }
-.about-us-header {
+.about-us_header {
     padding: 7px 7px 3px;
     margin-bottom: 10px;
     font-size: 24px;
@@ -12,7 +12,7 @@
     font-weight: bolder
 }
 
-.about-us-sad-story {
+.about-us_sad-story {
     font-style: italic;
     font-size: 12px;
     margin-bottom: 10px;
@@ -21,7 +21,7 @@
     font-weight: bolder;
 }
 
-.about-us-main-description {
+.about-us_main-description {
     line-height: 150%;
     padding: 7px 7px 3px;
     margin-bottom: 10px;

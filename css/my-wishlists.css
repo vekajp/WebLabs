@@ -4,11 +4,11 @@
 @import "footer.css";
 @import "navigation.css";
 
-.wishlist-section {
+.wishlist-list {
     font: 14px main-font;
 }
 
-.wishlist-section {
+.wishlist-list {
     margin: 15px;
 }
 
