@@ -24,3 +24,7 @@ body {
     border-radius: 7pt;
     display: inline-block;
 }
+
+a:hover {
+    color: var(--logo-dark-purple);
+}
