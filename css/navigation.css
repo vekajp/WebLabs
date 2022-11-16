@@ -21,7 +21,7 @@
     }
 }
 
-@media handheld {
+@media screen and (max-width: 2000px) {
     .navigation {
         margin: 10px;
     }
@@ -31,7 +31,7 @@
     }
 
     .navigation_list-item {
-        margin: 10px 0px 10px 0;
+        margin: 10px 0 10px 0;
         padding: 7px 7px 3px;
         display: block;
         position: center;
