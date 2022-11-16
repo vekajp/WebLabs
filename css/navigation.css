@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 800px) {
     .navigation {
         margin: 10px;
     }
