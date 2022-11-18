@@ -13,10 +13,7 @@
     font-size: 12px;
     margin-bottom: 10px;
     padding: 7px 7px 3px;
-    font-weight: bolder;
-    text-shadow: var(--logo-dark-purple) 0 0 1px;
-    text-align: center;
-
+    text-align: right;
 }
 
 .about-us_main-description {
@@ -24,7 +21,5 @@
     padding: 7px 7px 3px;
     margin-bottom: 10px;
     text-align: justify;
-    font-weight: bolder;
-    text-shadow: var(--logo-dark-purple) 0 0 1px;
     position: center;
 }
