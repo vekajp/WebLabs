@@ -23,9 +23,10 @@
     padding: 10px 10px 5px 10px;
     color: white;
     font: 16px main-font;
-    width: auto;
+    width: 100%;
     border-radius: 10px;
     margin: 10px;
+    display: block;
 }
 
 
@@ -35,13 +36,9 @@
     padding: 10px 10px 5px 10px;
     color: white;
     font: 16px main-font;
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
     margin: 10px;
-}
-
-.wishlist-creation_form_submit {
-    display: inline;
 }
 
 ::-webkit-input-placeholder {
@@ -54,8 +51,4 @@
     justify-content: center;
     flex-direction: row;
     width: 100%;
-}
-
-.wishlist-creation_form_submit {
-    width: 50%;
 }
