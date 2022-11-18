@@ -3,3 +3,59 @@
 @import "general.css";
 @import "footer.css";
 @import "navigation.css";
+.wishlist-creation_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.wishlist-creation_form-header {
+    font: 26px main-font;
+    margin-bottom: 30px;
+}
+
+.wishlist-creation_form input {
+    background-color: var(--logo-dark-purple);
+    border: 1px solid var(--logo-dark-purple);
+    padding: 10px 10px 5px 10px;
+    color: white;
+    font: 16px main-font;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.wishlist-creation_form button {
+    background-color: var(--logo-dark-purple);
+    border: 1px solid var(--logo-dark-purple);
+    padding: 10px 10px 5px 10px;
+    color: white;
+    font: 16px main-font;
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.wishlist-creation_form_submit {
+    display: inline;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font: 14px main-font;
+}
+
+.wishlist-creation_form_item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wishlist-creation_form_submit {
+    width: 50%;
+}
