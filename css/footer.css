@@ -8,3 +8,8 @@
     font: 12px main-font;
     margin: 15px;
 }
+
+.footer_page-loaded {
+    font: 8px main-font;
+    margin: 5px;
+}
