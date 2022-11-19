@@ -6,6 +6,7 @@
     <link href="../css/create-wishlist.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/general.js"></script>
+    <script src="../js/create-wishlist.js"></script>
 </head>
 <body>
 <div class="body-container">
@@ -28,18 +29,20 @@
         <p class="hide-show-menu" onclick="showMenu()">Показать меню</p>
     </header>
     <main>
-        <form class="wishlist-creation_form">
+        <form class="wishlist-creation_form" onsubmit="return false">
             <h2 class="wishlist-creation_form-header">Новый вишлист</h2>
             <div class="wishlist-creation_form_item">
                 <input class="wishlist-creation_form_wishlist-name" placeholder="Название вшлиста" type="text" id="name">
             </div>
-            <div class="wishlist-creation_form_item">
-                <input class="wishlist-creation_form_item-name" placeholder="Описание" type="text" id="item">
-                <input class="wishlist-creation_form_item-link" placeholder="Ссылка" type="text" id="item-link">
+            <div class="wishlist-creation_form_item-list">
+                <div class="wishlist-creation_form_item">
+                    <input class="wishlist-creation_form_item-name" placeholder="Описание" type="text" id="item">
+                    <input class="wishlist-creation_form_item-link" placeholder="Ссылка" type="text" id="item-link">
+                </div>
             </div>
             <div class="wishlist-creation_form_item">
-                <input class="add" value="Добавить" type="submit" id="add">
-                <input class="add" value="Сохранить" type="submit" id="submit">
+                <button class="add" onclick="addWishlistItem()" type="submit">Добавить</button>
+                <button class="add" type="submit">Сохранить</button>
             </div>
         </form>
     </main>
