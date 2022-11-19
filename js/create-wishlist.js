@@ -5,7 +5,9 @@ function addWishlistItem() {
         return;
     }
     let item = list.children.item(0);
-    console.log(item);
-    list.appendChild(item.cloneNode(true));
-    console.log(list);
+    let newItem = item.cloneNode(true);
+    newItem.childNodes.forEach(x => {
+        x.value = '';
+    })
+    list.appendChild(newItem);
 }
