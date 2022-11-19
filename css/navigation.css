@@ -49,12 +49,7 @@
 
     .navigation_list-item_active a {
         font: 18px main-font;
-        color: white;
-    }
-
-    .navigation_list-item_active {
-        background-color: var(--logo-dark-purple);
-
+        color: var(--logo-dark-purple);
     }
 
     .navigation_list-item a:hover {
@@ -62,7 +57,8 @@
     }
 
     .navigation_list-item_active a:hover {
-        color: var(--logo-yellow);
+        color: var(--logo-dark-purple);
+        text-decoration: underline;
     }
 }
 
