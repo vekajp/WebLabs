@@ -1,6 +1,3 @@
-/*.header_navigation {*/
-/*    display: flex;*/
-/*}*/
 .navigation {
     margin: 15px;
     display: block;
@@ -49,6 +46,7 @@
         font: 18px main-font;
         color: black;
     }
+
     .navigation_list-item_active a {
         font: 18px main-font;
         color: white;
