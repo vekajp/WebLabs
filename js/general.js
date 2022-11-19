@@ -19,3 +19,16 @@
         }
     });
 })();
+
+function showMenu() {
+    let menu = document.querySelectorAll('.navigation')[0];
+    let showMenuButton = document.querySelectorAll('.hide-show-menu')[0];
+    if (menu.style.position === "absolute") {
+        menu.style.position = 'static';
+        showMenuButton.innerHTML = 'Спрятать меню';
+    } else {
+        menu.style.position = 'absolute';
+        menu.style.left = '-1000px';
+        showMenuButton.innerHTML = 'Показать меню';
+    }
+}
