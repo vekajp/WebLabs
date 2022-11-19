@@ -10,6 +10,9 @@
         let links = document.getElementsByTagName("a");
         let menuItems = document.getElementsByClassName('navigation_list-item');
         for (let i = 0; i < menuItems.length; i++) {
+            if (document.location.pathname.endsWith('/')) {
+                menuItems[0].classList.add('navigation_list-item_active')
+            }
             if (document.location.pathname.endsWith(links[i].getAttribute("href").split('/').pop())) {
                 menuItems[i].classList.add('navigation_list-item_active')
             }
