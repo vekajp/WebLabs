@@ -3,47 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Sussy wishlist</title>
-    <link href="css/outline.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <img src="images/logo-rounded.png" width="100" height="100" alt="logo">
-    <h1>Sussy wishlists</h1>
-    <h2>Мечты твоих друзей <3 </h2>
-</header>
-<main>
+    <div class="header_logo-background">
+        <img class="header_logo-image" src="images/logo-rounded.png" alt="logo">
+    </div>
     <aside>
-        <nav>
+        <nav class="navigation">
             <ul>
-                <li><a href="pages/create-wishlist.html">создать вишлист</a></li>
-                <li><a href="pages/my-wishlists.html">мои вишлисты</a></li>
-                <li><a href="pages/useless.html">я сделаъ</a></li>
+                <li class="navigation_list-item"><a href="pages/my-wishlists.html" class="navigation_list-item_text">Главная</a></li>
+                <li class="navigation_list-item"><a href="pages/my-wishlists.html" class="navigation_list-item_text">Мои вишлисты</a></li>
+                <li class="navigation_list-item"><a href="pages/create-wishlist.html" class="navigation_list-item_text">Создать вишлист</a></li>
             </ul>
         </nav>
     </aside>
-
-    <article>
-        <h3>О нас</h3>
-        <pre>
-            <em>
-<q>Нет повести печальнее на свете,
-чем повесть о подаренном кальяне некурящей веке</q>
-            </em>
-        </pre>
+</header>
+<main>
+    <div class="about-us">
+        <h3 class="about-us_header">О нас</h3>
         <p>
-            Наверняка, у каждого человека(у которого есть друзья, семья или просто знакомые) было такое,
-            что он ломал голову над подарком человеку. Ведь бывает такое, что даже несмотря на многолетнюю дружбу
-            или отношения, совсем неочевидно, что порадует человека больше всего. "As you wish" - платформа для
-            обнародования желаний. Тут вы можете как создать свой вишлист, так и узнать о грязных желаниях ваших близких,
-            и порадовать их тем, что они действительно хотят<br>
+            <em class="about-us_sad-story">
+                Нет повести печальнее на свете,
+                чем повесть о подаренном кальяне некурящей веке
+            </em>
         </p>
-
-    </article>
-
+        <p class="about-us_main-description">
+            Наверняка, каждый человек хотя бы раз в жизни ломал голову над подарком близкому человеку.
+            Ведь бывает такое, что даже несмотря на многолетнюю дружбу и близость совсем неочевидно, что порадует человека больше всего.
+            <br>As you wish - платформа, созданная с целью навсегда решить эту проблему. Радуйте своих близких <3
+        </p>
+    </div>
 </main>
-<footer>
-    <p>
-        vekajp<3
+<footer class="footer">
+    <p class="footer_text">
+        beautiful creator: vekajp <3
     </p>
 </footer>
 </body>

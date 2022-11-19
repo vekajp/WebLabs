@@ -1,0 +1,26 @@
+:root {
+    --logo-red:#FF99C8;
+    --logo-yellow:#FCF6BD;
+    --logo-green:#D0F4DE;
+    --logo-blue:#A9DEF9;
+    --logo-purple:#E4C1F9;
+    --logo-dark-purple:#806491;
+}
+
+body {
+    background: linear-gradient(
+            to bottom,
+            var(--logo-purple) 50%,
+            white
+    );
+}
+
+.info {
+    margin: 15px;
+    font: 16px main-font;
+    padding: 7px 7px 3px;
+    background-color: white;
+    color: black;
+    border-radius: 7pt;
+    display: inline-block;
+}
