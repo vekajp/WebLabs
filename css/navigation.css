@@ -16,17 +16,17 @@
     }
 
     .navigation_list-item_active a:hover {
-        color: var(--logo-dark-purple);
+        color: black;
+        text-decoration: underline;
     }
 
-    .navigation_list-item_text {
+    .navigation_list-item a {
         font: 18px main-font;
         color: black;
     }
 
-    .navigation_list-item_active {
-        text-decoration: underline;
-        color: black;
+    .navigation_list-item_active a {
+        color: var(--logo-dark-purple);
     }
 }
 
