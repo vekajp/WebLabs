@@ -7,8 +7,8 @@
             stampParagraph.innerHTML += `Время загрузки страницы: ${(new Date().getTime() - startTime) / 1000} с`;
         };
 
-        let links = document.getElementsByTagName("a");
-        let menuItems = document.getElementsByClassName('navigation_list-item');
+        let links = document.querySelectorAll(".navigation_list-item a");
+        let menuItems = document.querySelectorAll('.navigation_list-item');
         for (let i = 0; i < menuItems.length; i++) {
             if (document.location.pathname.endsWith('/')) {
                 menuItems[0].classList.add('navigation_list-item_active')
