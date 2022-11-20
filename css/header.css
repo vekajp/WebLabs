@@ -42,6 +42,10 @@ header {
     .hide-show-menu {
         visibility: hidden;
     }
+
+    header aside {
+        display: block;
+    }
 }
 
 
@@ -72,8 +76,7 @@ header {
         align-items: center;
     }
 
-    .navigation {
-        position: absolute;
-        left: -1000px;
+    header aside {
+        display: none;
     }
 }

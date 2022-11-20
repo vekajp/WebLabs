@@ -1,4 +1,3 @@
-
 (() => {
     const startTime = new Date().getTime();
     document.addEventListener('DOMContentLoaded', () => {
@@ -21,14 +20,13 @@
 })();
 
 function showMenu() {
-    let menu = document.querySelectorAll('.navigation')[0];
+    let menu = document.querySelectorAll('header aside')[0];
     let showMenuButton = document.querySelectorAll('.hide-show-menu')[0];
-    if (menu.style.position === "absolute") {
-        menu.style.position = 'static';
+    if (menu.style.display === "") {
+        menu.style.display = 'block';
         showMenuButton.innerHTML = 'Спрятать меню';
     } else {
-        menu.style.position = 'absolute';
-        menu.style.left = '-1000px';
+        menu.style.display = ""
         showMenuButton.innerHTML = 'Показать меню';
     }
 }
