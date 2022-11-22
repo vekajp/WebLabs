@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    generateWishList();
-    showWishlist();
+    // let name =  decodeURI(document.URL).split("?")[1].split("&")[0].split("=")[1];
+    // let items = JSON.parse(localStorage.getItem(name));
+    // showWishlist(name, items);
+
+    generateWishList(displayFetched);
 });
 
-let showWishlist = function() {
-    let name =  decodeURI(document.URL).split("?")[1].split("&")[0].split("=")[1];
+let showWishlist = function(name, items) {
     document.querySelector(".wishlist_title").innerHTML = name;
     let list = document.querySelectorAll(".wishlist_items-list")[0];
-    let items = JSON.parse(localStorage.getItem(name));
     for (let item of items) {
         let itemName = item[0];
         let link = item[1];
@@ -27,8 +28,19 @@ let makeElement = function(name, link) {
     return element;
 }
 
-let generateWishList = function () {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+let generateWishList = function (display) {
+    fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
-        .then(json => console.log(json))
+        .then(users => display(users));
+}
+
+let displayFetched = function (users) {
+    let items = []
+    for (let user of users) {
+        items.push([user['name'], user['website']]);
+    }
+    showWishlist('Name', items);
+    document.querySelectorAll('.placeholder-content_item').forEach(x => {
+        x.classList.remove('placeholder-content_item');
+    });
 }

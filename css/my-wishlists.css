@@ -3,6 +3,7 @@
 @import "general.css";
 @import "footer.css";
 @import "navigation.css";
+@import "placeholder.css";
 
 .wishlist_list {
     font: 14px main-font;
