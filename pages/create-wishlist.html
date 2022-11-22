@@ -5,6 +5,7 @@
     <title>Create wishlist</title>
     <link href="../css/create-wishlist.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/general.js"></script>
 </head>
 <body>
 <div class="body-container">
@@ -26,14 +27,30 @@
         </div>
     </header>
     <main>
-        <p class="info">
-            Тут пока пусто!
-        </p>
+        <form class="wishlist-creation_form">
+            <h2 class="wishlist-creation_form-header">Новый вишлист</h2>
+            <div class="wishlist-creation_form_item">
+                <input class="wishlist-creation_form_wishlist-name" placeholder="Название вшлиста" type="text" id="name">
+            </div>
+            <div class="wishlist-creation_form_item">
+                <input class="wishlist-creation_form_item-name" placeholder="Описание" type="text" id="item">
+                <input class="wishlist-creation_form_item-link" placeholder="Ссылка" type="text" id="item-link">
+            </div>
+            <div class="wishlist-creation_form_item">
+                <input class="wishlist-creation_form_item-name" placeholder="Описание" type="text" id="item1">
+                <input class="wishlist-creation_form_item-link" placeholder="Ссылка" type="text" id="item-link1">
+            </div>
+            <div class="wishlist-creation_form_item">
+                <button>Добавить</button>
+                <button>Опубликовать</button>
+            </div>
+        </form>
     </main>
     <footer class="footer">
         <p class="footer_text">
-            beautiful creator: vekajp <3
+            beautiful creator: vekajp &lt;3
         </p>
+        <p class="footer_page-loaded" id="footer_page-loaded"></p>
     </footer>
 </div>
 </body>
