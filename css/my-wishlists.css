@@ -1,5 +1,5 @@
 @import "reset-style.css";
-@import "logo-header.css";
+@import "header-logo.css";
 @import "general.css";
 @import "footer.css";
 @import "navigation.css";
@@ -24,8 +24,6 @@
 .wishlist-list_item {
     margin: 15px 10px 15px 0;
     padding: 7px 7px 3px;
-    background-color: white;
-    border-radius: 7pt;
 }
 
 .wishlist-list_item-text {

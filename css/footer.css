@@ -1,5 +1,10 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
 .footer_text{
     font: 12px main-font;
     margin: 15px;
-    display: inline-block;
 }

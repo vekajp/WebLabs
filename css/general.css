@@ -5,22 +5,30 @@
     --logo-blue:#A9DEF9;
     --logo-purple:#E4C1F9;
     --logo-dark-purple:#806491;
+    --page-color:#fefdee
 }
 
 body {
-    background: linear-gradient(
-            to bottom,
-            var(--logo-purple) 50%,
-            white
-    );
+    background-color: var(--page-color);
 }
 
 .info {
     margin: 15px;
     font: 16px main-font;
     padding: 7px 7px 3px;
-    background-color: white;
     color: black;
-    border-radius: 7pt;
     display: inline-block;
+}
+
+a:hover {
+    color: var(--logo-dark-purple);
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+.body-container {
+    position: relative;
+    min-height: 100vh;
 }
