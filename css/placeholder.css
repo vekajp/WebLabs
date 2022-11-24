@@ -8,9 +8,9 @@
 }
 .placeholder-content_item {
     background-image: url("../images/cat.gif");
-    background-size: 500px 90px;
-    width: 500px;
-    height: 90px;
+    background-size: 450px 90px;
+    width: 1350px;
+    height: 180px;
     position: relative;
     overflow: hidden;
 }
