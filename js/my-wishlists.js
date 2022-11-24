@@ -1,6 +1,8 @@
+import {fetchData, removePlaceholders} from "./fetch.js";
+
 document.addEventListener('DOMContentLoaded', () => {
     // fillWithActualData();
-    fetchData(displayFetchedWishlists);
+    fetchData(displayFetchedWishlists, displayFailure);
 });
 
 
@@ -12,11 +14,10 @@ let fillWithActualData = function () {
     }
 }
 
-
-let fetchData = function (display) {
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json())
-        .then(users => display(users));
+export let displayFailure = function() {
+    let errorBlock = document.querySelector('.wishlist_list_loading-error-container');
+    errorBlock.classList.add('wishlist_list_loading-error-container_invisible');
+    removePlaceholders();
 }
 
 let displayItem = function (name, wishlistList) {

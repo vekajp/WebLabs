@@ -1,0 +1,15 @@
+.wishlist_loading-error-text, .wishlist_list_loading-error-text {
+    color: black;
+    font: 18px/22px main-font;
+    margin: 15px 10px 15px 0;
+    padding: 7px 7px 3px;
+    line-height: 40px;
+}
+
+.wishlist_loading-error-container, .wishlist_list_loading-error-container {
+    display: none;
+}
+
+.wishlist_loading-error-container_invisible, .wishlist_list_loading-error-container_invisible {
+    display: block;
+}

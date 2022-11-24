@@ -4,6 +4,7 @@
 @import "footer.css";
 @import "navigation.css";
 @import "placeholder.css";
+@import "error.css";
 
 .wishlist_list {
     font: 14px main-font;

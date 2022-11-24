@@ -6,7 +6,7 @@
     <link href="../css/wishlist-view.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/general.js"></script>
-    <script src="../js/wishlist-view.js"></script>
+    <script src="../js/wishlist-view.js" type="module"></script>
 </head>
 <body>
 <div class="body-container">
@@ -35,9 +35,12 @@
       <ol class="wishlist_items-list"></ol>
       <div class="placeholder-content">
         <div class="placeholder-content_item"></div>
-        <div class="placeholder-content_item"></div>
-        <div class="placeholder-content_item"></div>
-        <div class="placeholder-content_item"></div>
+      </div>
+      <div class="wishlist_loading-error-container">
+        <pre  class="wishlist_loading-error-text">
+Что-то пошло не так :(
+Проверьте подключение к интернету и перезагрузите страницу.
+        </pre>
       </div>
     </section>
   </main>

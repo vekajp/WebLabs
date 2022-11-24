@@ -1,9 +1,11 @@
+import {fetchData, removePlaceholders} from "./fetch.js";
+
 document.addEventListener('DOMContentLoaded', () => {
     // let name =  decodeURI(document.URL).split("?")[1].split("&")[0].split("=")[1];
     // let items = JSON.parse(localStorage.getItem(name));
     // showWishlist(name, items);
 
-    generateWishList(displayFetched);
+    fetchData(displayFetched, displayFailure);
 });
 
 let showWishlist = function(name, items) {
@@ -28,10 +30,10 @@ let makeElement = function(name, link) {
     return element;
 }
 
-let generateWishList = function (display) {
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json())
-        .then(users => display(users));
+export let displayFailure = function() {
+    let errorBlock = document.querySelector('.wishlist_loading-error-container');
+    errorBlock.classList.add('wishlist_loading-error-container_invisible');
+    removePlaceholders();
 }
 
 let displayFetched = function (users) {
@@ -40,7 +42,4 @@ let displayFetched = function (users) {
         items.push([user['name'], user['website']]);
     }
     showWishlist('Name', items);
-    document.querySelectorAll('.placeholder-content_item').forEach(x => {
-        x.classList.remove('placeholder-content_item');
-    });
 }
