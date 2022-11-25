@@ -27,13 +27,14 @@ function saveWishlist() {
     }
 
     localStorage.setItem(wishListName, JSON.stringify(wishlistItems));
+
     iziToast.show({
         class: 'wishlist_saved',
         title: 'Ура!',
         titleSize: 20,
         message: 'Вишлист успешно сохранен в локальное хранилище',
         color: '#E4C1F9',
-        image: 'https://i.pinimg.com/originals/0e/60/dd/0e60dda3fe5a8311e850e908787653b6.png',
+        image: 'https://i.pinimg.com/originals/0e/60/dd/0e60dda3fe5a8311e850e908787653b6.png'
     });
     reset();
 }
