@@ -1,11 +1,9 @@
 import {fetchData, removePlaceholders} from "./fetch.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    // let name =  decodeURI(document.URL).split("?")[1].split("&")[0].split("=")[1];
-    // let items = JSON.parse(localStorage.getItem(name));
-    // showWishlist(name, items);
-
-    fetchData(displayFetched, displayFailure);
+    let name =  decodeURI(document.URL).split("?")[1].split("&")[0].split("=")[1];
+    let items = JSON.parse(localStorage.getItem(name));
+    showWishlist(name, items);
 });
 
 let showWishlist = function(name, items) {
@@ -17,6 +15,7 @@ let showWishlist = function(name, items) {
         let element = makeElement(itemName, link);
         list.appendChild(element);
     }
+    removePlaceholders();
 }
 
 let makeElement = function(name, link) {
