@@ -6,7 +6,7 @@
     <link href="../css/wishlist-view.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/general.js"></script>
-    <script src="../js/wishlist-view.js"></script>
+    <script src="../js/wishlist-view.js" type="module"></script>
 </head>
 <body>
 <div class="body-container">
@@ -17,12 +17,12 @@
       </div>
       <aside>
         <nav class="navigation">
-          <ul>
+          <ol>
             <li class="navigation_list-item"><a href="../index.html" class="navigation_list-item_text">Главная</a></li>
             <li class="navigation_list-item"><a href="../pages/my-wishlists.html" class="navigation_list-item_text">Мои вишлисты</a></li>
             <li class="navigation_list-item"><a href="../pages/create-wishlist.html" class="navigation_list-item_text">Создать вишлист</a></li>
             <li class="navigation_list-item"><a href="../pages/about-us.html" class="navigation_list-item_text">О нас</a></li>
-          </ul>
+          </ol>
         </nav>
       </aside>
     </div>
@@ -31,8 +31,17 @@
 
   <main>
     <section class="wishlist">
-      <h3 class="wishlist_title">Покушац</h3>
+      <h3 class="wishlist_title">Название</h3>
       <ol class="wishlist_items-list"></ol>
+      <div class="placeholder-content">
+        <div class="placeholder-content_item"></div>
+      </div>
+      <div class="wishlist_loading-error-container">
+        <pre  class="wishlist_loading-error-text">
+Что-то пошло не так :(
+Проверьте подключение к интернету и перезагрузите страницу.
+        </pre>
+      </div>
     </section>
   </main>
   <footer class="footer">

@@ -1,0 +1,16 @@
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+.placeholder-content_item {
+    background-image: url("../images/cat.gif");
+    background-size: 450px 90px;
+    width: 450px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+}
