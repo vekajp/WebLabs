@@ -1,11 +1,26 @@
 @import "fonts.css";
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .header_logo-image {
     width: 150px;
     height: 150px;
     margin: 15px;
 }
 
-@media screen and (max-width: 4000px) and (min-width: 651px) {
+.hide-show-menu {
+    text-align: center;
+    font: 12px main-font;
+}
+
+.hide-show-menu:hover {
+    color: var(--logo-dark-purple);
+}
+
+@media screen and (min-width: 651px) {
     .header_logo-navigation-background {
         background:
                 linear-gradient(
@@ -23,6 +38,13 @@
                 );
         margin-bottom: 10px;
         display: flex;
+    }
+    .hide-show-menu {
+        visibility: hidden;
+    }
+
+    header aside {
+        display: block;
     }
 }
 
@@ -52,5 +74,9 @@
         margin-bottom: 10px;
         text-align: center;
         align-items: center;
+    }
+
+    header aside {
+        display: none;
     }
 }

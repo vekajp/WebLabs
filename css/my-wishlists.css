@@ -1,14 +1,11 @@
 @import "reset-style.css";
-@import "header-logo.css";
+@import "header.css";
 @import "general.css";
 @import "footer.css";
 @import "navigation.css";
 
-.wishlist-list {
+.wishlist_list {
     font: 14px main-font;
-}
-
-.wishlist-list {
     margin: 15px;
 }
 

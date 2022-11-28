@@ -4,7 +4,7 @@
 
 .wishlist_title {
     padding: 7px 7px 3px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font: 28px/32px main-font;
     display: inline-block;
 }
@@ -12,6 +12,20 @@
 .wishlist_item {
     margin: 15px 10px 15px 0;
     padding: 7px 7px 3px;
+}
+
+.wishlist_item a {
+    color: black;
+    font: 18px/22px main-font;
+}
+
+.wishlist_item a:hover {
+    color: var(--logo-dark-purple);
+}
+
+.wishlist_item p {
+    color: black;
+    font: 18px/22px main-font;
 }
 
 .wishlist_item_text {

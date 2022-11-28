@@ -1,5 +1,5 @@
 @import "reset-style.css";
-@import "header-logo.css";
+@import "header.css";
 @import "general.css";
 @import "footer.css";
 @import "navigation.css";
@@ -14,22 +14,10 @@
 .wishlist-creation_form-header {
     font: 26px main-font;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.wishlist-creation_form input {
-    background-color: var(--logo-dark-purple);
-    border: 1px solid var(--logo-dark-purple);
-    padding: 10px 10px 5px 10px;
-    color: white;
-    font: 16px main-font;
-    width: 100%;
-    border-radius: 10px;
-    margin: 10px;
-    display: block;
-}
-
-
-.wishlist-creation_form button {
+.wishlist-creation_form input, button {
     background-color: var(--logo-dark-purple);
     border: 1px solid var(--logo-dark-purple);
     padding: 10px 10px 5px 10px;
@@ -50,6 +38,12 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
+}
+.wishlist-creation_form_item-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 
