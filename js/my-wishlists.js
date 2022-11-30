@@ -1,10 +1,9 @@
 import {fetchData, removePlaceholders} from "./fetch.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    // fillWithActualData();
-    fetchData(displayFetchedWishlists, displayFailure);
-});
+    fillWithActualData();
 
+});
 
 let fillWithActualData = function () {
     let wishlistList = document.querySelectorAll(".wishlist_items-list")[0];
@@ -12,11 +11,6 @@ let fillWithActualData = function () {
         let name = localStorage.key(i);
         displayItem(name, wishlistList);
     }
-}
-
-export let displayFailure = function() {
-    let errorBlock = document.querySelector('.wishlist_list_loading-error-container');
-    errorBlock.classList.add('wishlist_list_loading-error-container_invisible');
     removePlaceholders();
 }
 
@@ -25,6 +19,12 @@ let displayItem = function (name, wishlistList) {
     listItem.classList.add("wishlist-list_item");
     listItem.innerHTML = `<a href=\"../pages/wishlist-view.html?name=${name}\" class=\"wishlist-list_item-text\">${name}</a>`
     wishlistList.appendChild(listItem);
+}
+
+export let displayFailure = function() {
+    let errorBlock = document.querySelector('.wishlist_list_loading-error-container');
+    errorBlock.classList.add('wishlist_list_loading-error-container_invisible');
+    removePlaceholders();
 }
 
 let displayFetchedWishlists = function (users) {
